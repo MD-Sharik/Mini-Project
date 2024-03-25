@@ -1,2 +1,2 @@
 # Mini Projects
-# https://md-sharik.github.io/Mini-Project/
+# https://md-sharik.github.io/Mini-Projects/

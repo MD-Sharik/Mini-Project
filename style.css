@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,800");
+
+@media (min-width: 500px) {
+  .col-sm-6 {
+    width: 50%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  overflow-y: hidden;
+  display: flex;
+  height: 100vh;
+}
+.start {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  background: rgba(0, 0, 0, 0.919);
+  backdrop-filter: blur(15px);
+  justify-content: center;
+  align-items: center;
+}
+.start button {
+  cursor: pointer;
+  background: rgb(57, 255, 47);
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem 3rem;
+  border: none;
+  outline: none;
+  border-radius: 0.3rem;
+  transition: all 300ms;
+  &:hover {
+    background: rgb(255, 255, 255);
+    padding: 1.2rem 5rem;
+    color: green;
+  }
+}
+
+.Weather-side {
+  background-color: rgb(99, 88, 238, 1);
+  height: 100vh;
+  &:hover {
+    filter: drop-shadow(0px 0px 15px #00000050);
+    z-index: 99;
+  }
+}
+
+.Password-side {
+  background-color: rgb(238, 195, 88);
+  height: 10%;
+  &:hover {
+    filter: drop-shadow(0px 0px 15px #00000050);
+    z-index: 99;
+  }
+}
+.Game-side {
+  background-color: rgb(238, 88, 88);
+  height: 100%;
+  &:hover {
+    filter: drop-shadow(0px 0px 15px #00000050);
+    z-index: 99;
+  }
+}
+
+.Quote-side {
+  background-color: rgb(88, 175, 238);
+  height: 100%;
+  &:hover {
+    filter: drop-shadow(0px 0px 15px #00000050);
+    z-index: 99;
+  }
+}
+
+.split-pane {
+  padding-top: 1em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 6rem;
+  font-size: 2em;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+@media (min-width: 500px) {
+  .split-pane {
+    padding-top: 2em;
+    height: 100%;
+  }
+}
+.split-pane > div {
+  position: relative;
+  top: 45%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+.split-pane > div .text-content {
+  line-height: 1.6em;
+  margin-bottom: 1em;
+}
+.split-pane > div .text-content .big {
+  font-size: 3rem;
+}
+.split-pane > div img {
+  height: 1.3em;
+}
+@media (max-width: 1419px) {
+  .main {
+    display: block;
+    overflow-y: scroll;
+  }
+
+  .split-pane {
+    width: 100%;
+    height: 33%;
+  }
+}
+@media (max-width: 540px) {
+  .main {
+    display: block;
+    font-size: 0.7rem;
+  }
+  .split-pane {
+    width: 100%;
+    height: 33%;
+  }
+}
+.split-pane button,
+.split-pane a.button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  background: none;
+  border: 1px solid white;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  width: 15em;
+  padding: 0.7em;
+  font-size: 0.5em;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  cursor: pointer;
+}
+.split-pane button:hover {
+  text-decoration: none;
+  background-color: white;
+  border-color: white;
+  cursor: pointer;
+  color: black;
+}
+
+#split-pane-or {
+  font-size: 2em;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+@media (max-width: 925px) {
+  #split-pane-or {
+    top: 15%;
+  }
+}
+#split-pane-or > div img {
+  height: 2.5em;
+}
+@media (max-width: 500px) {
+  #split-pane-or {
+    position: absolute;
+    top: 50px;
+  }
+  #split-pane-or > div img {
+    height: 2em;
+  }
+}
+@media (min-width: 500px) {
+  #split-pane-or {
+    font-size: 3em;
+  }
+}
+.big {
+  font-size: 2em;
+}
+
+@media (min-width: 500px) {
+  #slogan {
+    top: 5%;
+    font-size: 1.8em;
+  }
+}
+#slogan img {
+  height: 0.7em;
+}
+.bold {
+  text-transform: uppercase;
+}
+.big {
+  font-weight: 800;
+}
